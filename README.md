@@ -62,5 +62,5 @@ $('#'+id).countdownManager(options);
 
 ### Who do I talk to? ###
 
-* Créator : Basile Trujillo
+* Creator : Basile Trujillo
 * Contributor : Seritech Team
