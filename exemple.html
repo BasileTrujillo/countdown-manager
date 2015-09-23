@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head lang="fr">
+    <meta charset="UTF-8">
+    <title>countdown-manager Test</title>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="countdown-manager.js"></script>
+</head>
+<body>
+    <div id="toto"></div>
+    <script type="text/javascript">
+        //Fonction de callback
+        var foo = function() {
+            alert('done');
+        };
+
+        //Id de l'élément DOM
+        var id = 'toto';
+
+        //Datetime cible
+        var targetTime = new Date('2015-08-14T11:24:00');
+
+        //Liste des options
+        var options = {
+            targetTime: targetTime,
+            callback: foo,
+            //startDatetime: new Date('2015-08-13T11:24:00') //(optionnel)
+        };
+
+        /**
+         * Usage hors jQuery retrocompatible (V1)
+         */
+        //initCountDown(id, targetTime);
+
+        /**
+         * Usage hors jQuery V2
+         */
+        /*
+        var options = {
+            targetTime: targetTime,
+            callback: foo,
+            //startDatetime: new Date('2015-08-13T11:24:00') //(optionnel)
+        };
+        countdownManager.initByClone(id, options);
+        */
+
+        /**
+         * Usage jQuery style
+         */
+        $('#'+id).countdownManager(options);
+    </script>
+</body>
+</html>
