@@ -1,0 +1,22 @@
+{
+  "name": "countdown-manager",
+  "version": "1.0.0",
+  "description": "Countdown Manager compatible jQuery et Javascript natif",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://L0gIn@bitbucket.org/L0gIn/countdown-manager.git"
+  },
+  "author": "Basile Trujillo",
+  "license": "",
+  "devDependencies": {
+    "gulp": "latest",
+    "gulp-load-plugins": "latest",
+    "gulp-rename": "latest",
+    "gulp-plumber": "latest",
+    "gulp-uglify": "latest"
+  }
+}
